@@ -1,0 +1,21 @@
+
+g
+java:S2147l"ECombine this catch with the one at line 105, which has the same body.(ĞĞ¹óúÿÿÿÿ8ÀÚ›×.
+Z	java:S106f"9Replace this use of System.out or System.err by a logger.(É‡Şşûÿÿÿÿ8ÀÚ›×.
+p
+java:S1192¨"RDefine a constant instead of duplicating this literal "Invalid email: %s" 3 times.(è£•8ÀÚ›×.
+Z	java:S106m"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ8ÀÚ›×.
+W
+java:S1161H":Add the "@Override" annotation above this method signature(‡èú×8ÀÚ›×.
+U	java:S106u"9Replace this use of System.out or System.err by a logger.(µÇÔò8ÀÚ›×.
+V	java:S106¾"9Replace this use of System.out or System.err by a logger.(è£•8ÀÚ›×.
+Z	java:S106j"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ8ÀÚ›×.
+L
+java:S10666"/Merge this if statement with the enclosing one.(±Ûã8ÀÚ›×.
+o
+java:S3776r"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(Çµí‘8ÀÚ›×.
+V	java:S106³"9Replace this use of System.out or System.err by a logger.(è£•8ÀÚ›×.
+V	java:S106Ä"9Replace this use of System.out or System.err by a logger.(Øß…¥8ÀÚ›×.
+L
+java:S5411_"*Use the primitive boolean expression here.(Ğ«‡ûÿÿÿÿ8ÀÚ›×.
+V	java:S106¨"9Replace this use of System.out or System.err by a logger.(è£•8ÀÚ›×.
