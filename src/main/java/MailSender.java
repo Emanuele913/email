@@ -46,7 +46,7 @@ public class MailSender {
 
     String messageText;
 
-    String attach;
+    List<String> attachs;
 
     private static String[] arguments;
 
@@ -100,35 +100,27 @@ public class MailSender {
             if (isHtml) {
                 message.setContent(messageText, "text/html");
             } else {
-                /// Poichè deve essere allagata una tabella prevediamo che il contenuto
+                /// Poichè deve essere allegata una tabella prevediamo che il contenuto
                 /// sia solo in formato HTML
                 message.setText("Not valid Message");
             }
 
             if (isAttach){
                 Multipart multipart = new MimeMultipart();
-
-
-                MimeBodyPart attachmentPart = new MimeBodyPart();
-                // Set HTML mail to send
-                MimeBodyPart htmlPart = new MimeBodyPart();
-                htmlPart.setContent(messageText, "text/html; charset=utf-8"); //<<<<< Rappresentazione in HTML
-
                 try {
-
-                    File f =new File(attach);
-                    attachmentPart.attachFile(f);
-
-                    multipart.addBodyPart(htmlPart);
-                    multipart.addBodyPart(attachmentPart);
-
-
+                    /// Per ogni attach presente in lista andiamo a creare un nuovo Oggetto da allegare alla mail
+                    for( String attach : attachs) {
+                        MimeBodyPart attachmentPart = new MimeBodyPart();
+                        File f = new File(attach);
+                        System.out.println(f.getName());
+                        attachmentPart.attachFile(f);
+                        multipart.addBodyPart(attachmentPart);
+                    }
                 } catch (IOException e) {
 
                     e.printStackTrace();
 
                 }
-
                 message.setContent(multipart);
             }
 
@@ -183,7 +175,7 @@ public class MailSender {
                     mailSender.authUsername = creds[0];
                     mailSender.authPassword = creds[1];
                     break;
-
+                    /// Omettiamo il case -message poichè caricato dal GetInfo dell'oggetto GenerateIndo
                     /*
                 case "-message":
                     String message = retrieveArgument(i + 1);
@@ -228,9 +220,18 @@ public class MailSender {
                         }
                     }
                     break;
+                    /// I percorsi sono separati dal delimitatore ','
                 case "-A":
                     mailSender.isAttach = true;
-                    mailSender.attach = retrieveArgument(i + 1);
+                    String [] attachments = retrieveArgument(i + 1).split(";");
+                    mailSender.attachs = new ArrayList<>();
+                    for (String attach : attachments){
+                        try {
+                            mailSender.attachs.add(new String(attach));
+                        }catch (Exception e) {
+                            System.err.println(String.format("Invalid File Name: %s", attach));
+                        }
+                    }
                     break;
                 default:
                     if (args[i].contains("-"))
@@ -243,5 +244,4 @@ public class MailSender {
         mailSender.messageText = mailSender.generateInfo.getInfo().toString();
         mailSender.sendMail();
     }
-
 }

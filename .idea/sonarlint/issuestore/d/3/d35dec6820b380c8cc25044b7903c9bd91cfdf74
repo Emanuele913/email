@@ -1,21 +1,30 @@
 
-g
-java:S2147l"ECombine this catch with the one at line 105, which has the same body.(ĞĞ¹óúÿÿÿÿ8ÀÚ›×.
-Z	java:S106f"9Replace this use of System.out or System.err by a logger.(É‡Şşûÿÿÿÿ8ÀÚ›×.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ8Èìİ×.
+V	java:S106Í"9Replace this use of System.out or System.err by a logger.(è£•8Èìİ×.
+V	java:S106Ø"9Replace this use of System.out or System.err by a logger.(è£•8Èìİ×.
 p
-java:S1192¨"RDefine a constant instead of duplicating this literal "Invalid email: %s" 3 times.(è£•8ÀÚ›×.
-Z	java:S106m"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ8ÀÚ›×.
+java:S1192Í"RDefine a constant instead of duplicating this literal "Invalid email: %s" 3 times.(è£•8ºÒÄŸ×.
+h
+java:S2147"ECombine this catch with the one at line 140, which has the same body.(ĞĞ¹óúÿÿÿÿ8Èìİ×.
+S
+java:S2209ó"5Change this instance-reference to a static reference.(«ğ°Ì8óíêŸ×.
+V	java:S106í"9Replace this use of System.out or System.err by a logger.(Øß…¥8óíêŸ×.
 W
-java:S1161H":Add the "@Override" annotation above this method signature(‡èú×8ÀÚ›×.
-U	java:S106u"9Replace this use of System.out or System.err by a logger.(µÇÔò8ÀÚ›×.
-V	java:S106¾"9Replace this use of System.out or System.err by a logger.(è£•8ÀÚ›×.
-Z	java:S106j"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ8ÀÚ›×.
+java:S1161M":Add the "@Override" annotation above this method signature(‡èú×8Èìİ×.
+p
+java:S3776•"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(Çµí‘8Èìİ×.
 L
-java:S10666"/Merge this if statement with the enclosing one.(±Ûã8ÀÚ›×.
-o
-java:S3776r"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(Çµí‘8ÀÚ›×.
-V	java:S106³"9Replace this use of System.out or System.err by a logger.(è£•8ÀÚ›×.
-V	java:S106Ä"9Replace this use of System.out or System.err by a logger.(Øß…¥8ÀÚ›×.
+java:S1066;"/Merge this if statement with the enclosing one.(±Ûã8Èìİ×.
+V	java:S106˜"9Replace this use of System.out or System.err by a logger.(µÇÔò8Èìİ×.
+X	java:S125½"<This block of commented-out lines of code should be removed.(—­Êg8²¨ÑŸ×.
+V	java:S106ã"9Replace this use of System.out or System.err by a logger.(è£•8ºÒÄŸ×.
+[	java:S106‰"9Replace this use of System.out or System.err by a logger.(É‡Şşûÿÿÿÿ8Èìİ×.
+G
+java:S5411l"*Use the primitive boolean expression here.(àÇô¯8ÙØáŸ×.
+]
+java:S1854J";Remove this useless assignment to local variable "session".(ıªœûøÿÿÿÿ8£–Ÿ×.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ8Èìİ×.
+W
+java:S1141u"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8…›àŸ×.
 L
-java:S5411_"*Use the primitive boolean expression here.(Ğ«‡ûÿÿÿÿ8ÀÚ›×.
-V	java:S106¨"9Replace this use of System.out or System.err by a logger.(è£•8ÀÚ›×.
+java:S5411d"*Use the primitive boolean expression here.(Ğ«‡ûÿÿÿÿ8Èìİ×.
