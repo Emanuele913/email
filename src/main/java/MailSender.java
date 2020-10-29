@@ -116,12 +116,18 @@ public class MailSender {
                         attachmentPart.attachFile(f);
                         multipart.addBodyPart(attachmentPart);
                     }
+                    // Set HTML mail to send
+                    MimeBodyPart htmlPart = new MimeBodyPart();
+                    htmlPart.setContent( messageText, "text/html; charset=utf-8" ); //<<<<< Rappresentazione in HTML
+                    multipart.addBodyPart(htmlPart);
+                    message.setContent(multipart);
                 } catch (IOException e) {
 
                     e.printStackTrace();
 
                 }
-                message.setContent(multipart);
+
+
             }
 
 

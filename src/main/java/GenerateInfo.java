@@ -35,6 +35,13 @@ public class GenerateInfo {
         buf.append(getCourtesyText());
 
         buf.append("<html>" +
+                "<head>"+
+                "<style>"+
+                "table, th, td {"+
+                "border: 1px solid black;"+
+                "}"+
+                "</style>"+
+                "</head>"+
                 "<body>" +
                 "<table>" +
                 "<tr>" +
